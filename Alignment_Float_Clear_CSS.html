@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <style>
+        *{
+            /* margin: auto;
+            margin-top: auto; */
+            /* margin-bottom: auto; */
+            /* background-color: saddlebrown; */
+
+            box-sizing: border-box;
+        }
+
+        .container{
+            width: 900px;
+            border: 3px solid purple;
+            background-color: rgb(233, 158, 149);
+            margin: 33px auto;
+        }
+
+        .item{
+            border: 3px solid gray;
+            margin: 12px 3px;
+            padding: 12px 3px;
+            background-color: aqua;
+        }
+
+        #fruits{
+            float: right;
+            /* float: left; */
+            width: 48%;
+        }
+
+        #Computer{
+            float: left;
+            width: 48%;
+        }
+
+        #Stationary{
+            /* When we are using float: left box model of friuts and computer were overlaping on the box of stationary */
+            /* float: left; */
+
+            /* clear: left;
+            clear: right; */
+
+            clear: left;
+
+            /* clear: right; */
+            clear: both;
+            width: 100%;
+        }
+
+        p, h1{
+            /* text-align: right; */
+            /* Priority is given to the later style */
+            /* text-align: left;
+            text-align: center; */
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="fruits" class="item">
+            <h3>Fruits</h3>
+            <p id="fruitspara" class="para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis sed ipsa asperiores aperiam temporibus aliquam laboriosam reiciendis, quia, repellat assumenda perspiciatis non saepe, qui explicabo eius voluptatum vitae minus id?Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus magni debitis dolorum officiis! Repellat placeat iure omnis in dolores dicta? Quas in laudantium impedit reprehenderit iste harum iusto atque similique!
+            </p>
+        </div>
+
+        <div id="Computer" class="item">
+            <h3>Computer</h3>
+            <p id="computerpara" class="para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur similique adipisci deserunt excepturi ipsa culpa dolor a nostrum, obcaecati soluta aliquid dicta eum pariatur omnis corporis natus ab! Repellat, similique.
+            </p>
+        </div>
+
+        <div id="Stationary" class="item">
+            <h3>Stationary</h3>
+            <p id="stationarypara" class="para">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam eligendi ullam facere voluptate, magni assumenda earum eveniet a voluptatibus consequuntur accusantium eum autem, temporibus amet cumque quam perspiciatis. Accusamus, impedit.
+            </p>
+        </div>
+    </div>
+</body>
+</html>

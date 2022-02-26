@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borders and Background CSS</title>
+    <style>
+        #firstpara{
+            background-color: yellowgreen;
+            width: 450px;
+            height: 100px;
+            /* border-color: red;
+            border-style: solid;
+            border-width: 2.5px; */
+
+            /* In a single line */
+            border: 2.5px solid red;
+            border-radius: 10px;
+        }
+        #secondpara{
+            background-color: lightblue;
+            height: 100px;
+            width: 450px;
+            border-top: 3px solid red;
+            border-bottom: 3px solid purple;
+            border-left: 3px solid orangered;
+            border-right: 3px solid green ;
+            border-top-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            border-top-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+        }
+        #thirdpara{
+            font-weight: bold;
+            color: white;
+            height: 500px;
+            width: 650px;
+            border: 3px solid black;
+            background-image: url('https://media.istockphoto.com/photos/picturesque-morning-in-plitvice-national-park-colorful-spring-scene-picture-id1093110112?k=20&m=1093110112&s=612x612&w=0&h=3OhKOpvzOSJgwThQmGhshfOnZTvMExZX2R91jNNStBY=');
+            background-repeat: no-repeat; /*repeat-x and repeat-y will repeat in x and y respectively*/
+            /* background-position: 192px 34px;
+            background-position: center center; */
+            /* background-position: top center; */
+            /* background-position: center right; */
+        }
+    </style>
+</head>
+<body>
+    <h3>Heading</h3>
+    <p id="firstpara">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur repellat soluta similique velit distinctio, blanditiis tenetur vitae libero, sint in eligendi dolor obcaecati laudantium consectetur perspiciatis natus fugiat fuga officia.</p>
+    <div>
+        <p id="secondpara">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi est perferendis optio neque distinctio ea, magnam reprehenderit a hic earum repudiandae maiores voluptates tempora non quis tempore corrupti et magni!</p>
+    </div>
+    <div>
+        <p id="thirdpara">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil vel necessitatibus sunt magni, cupiditate perferendis exercitationem nostrum aliquam soluta quas deleniti recusandae adipisci. Recusandae ducimus, porro nam nostrum rerum eligendi?</p>
+    </div>
+</body>
+</html>

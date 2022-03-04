@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        .container{
+            border: 3px solid black;
+            background-color: aqua;
+            height: 2000px;
+        }
+        .box{
+            display: inline-block;
+        border: 2px solid red;
+        width: 150px;
+        height: 150px;
+        margin: 2px;
+        }
+        #box3{
+            background-color: blueviolet;
+            /* position: static; */
+            /* relative: relative to the position */
+            /* position: relative; */
+
+            /* absolute: relative to its normal position */
+            /* position: absolute; */
+
+            /* top: 34px;
+            left: 134px; */
+
+            /* fixed: If you scroll the web page, box3 will be fixed, it won't scroll */
+            /* position: fixed; */
+
+            /* Its like when we scroll the browser webpage upwards, the search always stick to the top of the screen */
+            position: sticky;
+            top: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="box" id="box1">1</div>
+    <div class="box" id="box2">2</div>
+    <div class="box" id="box3">3</div>
+    <div class="box" id="box4">4</div>
+</div>
+</body>
+</html>

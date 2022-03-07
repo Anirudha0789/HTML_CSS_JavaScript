@@ -1,0 +1,162 @@
+body{
+	background: url('./images/treesgood.jpg');
+	background-repeat: no-repeat;
+   background-size: cover;
+   margin: 0px;
+
+
+}
+.donate{
+	background: url('./images/treesdonategood.jpg');
+	background-repeat: no-repeat;
+   background-size: cover;
+
+
+   margin: 0px;
+}
+
+nav{
+	background-color: white;
+	display: flex;
+	color: #009E60;
+	font-weight: bold;
+}
+
+.right{
+	display: flex;
+  margin-left: auto;
+  
+  position: relative;
+  top: 5px;
+  
+}
+
+
+.left{
+	position: relative;
+  top: 2px;
+  margin-left: 10px;
+}
+
+
+.right > h3{
+	margin-right: 20px;
+}
+
+.slogan{
+	text-align: center;
+
+	color: #fdfff5;
+	font-size: 200%;
+	font-family: 'Karla', sans-serif;
+}
+
+
+button{
+	background: green;
+	color: white;
+	border-radius: 5px;
+	height: 60px;
+	width: 200px;
+	border-style: solid;
+	border-color: #fdfff5;
+	opacity: 80%;
+	font-weight: 10px;
+}
+
+button:hover{
+	cursor: pointer;
+}
+
+
+.quote{
+	
+	
+	max-width: 50%;
+	text-align: center;
+	position: relative;
+	left: 25%;
+	top: 40px;
+	background-color: rgba(0,0,0,.5);
+
+
+
+    color: #fff;
+	border-color: white;
+	border-style: solid;
+}
+
+.quote > h2{
+	font-size: 280%;
+	opacity: 4;
+	color: white;
+}
+
+
+.quote > h4{
+	font-size: 180%;
+	opacity: 4;
+	color: white;
+	margin-bottom: 100px;
+}
+
+.right > .home {
+	text-decoration: none;
+	color: #009E60;
+	position: relative;
+	right: 20px;
+}
+
+h3 > a {
+	text-decoration: none;
+	color: #009E60;
+	
+}
+
+
+.quote > form{
+	margin-bottom: 20px;
+}
+
+
+
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+form > h1{
+	text-align: center;
+}
+
+.contact{
+	background: -webkit-linear-gradient(360deg, #01a99c 10%, #0698b1 360%); /* Chrome 10+, Saf5.1+ */ background: -moz-linear-gradient(360deg, #01a99c 10%, #0698b1 360%); /* FF3.6+ */ background: linear-gradient(360deg, #01a99c 10%, #0698b1 360%); 
+}

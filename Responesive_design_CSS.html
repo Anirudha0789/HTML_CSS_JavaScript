@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Size units</title>
+    <style>
+        html{
+            font-size: 25px;
+        }
+        .container{
+            font-size: 10px;
+            border: 2px solid red;
+            height: 100vh;
+            width: 100vw;
+        }
+        h1{
+            text-align: center;
+            font-size: 10px;
+        }
+        #ids1{
+            font-size: 3em;    /*three time of container font size*/
+            padding: 3em;      /*three times of font-size*/
+        }
+        #ids2{
+            font-size: 3rem;  /* three times of html font size */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="ids1">first</h1>
+        <h1 id="ids2">second</h1>
+        <h1 id="ids3">third</h1>
+    </div>
+</body>
+</html>

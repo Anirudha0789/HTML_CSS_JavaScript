@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and After Pseudo Selector</title>
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background-color: black;
+            color: white;
+            margin: 0px;
+            padding: 0px;
+        }
+        .navigation{
+            font-family: 'Bree Serif', serif;
+            display: flex;
+            font-size: 20px;
+        }
+        li{
+            list-style: none;
+            padding: 20px 23px;
+        }
+        section{
+            margin: 3px 23px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 344px;
+            justify-content: center;
+            /* border: 2px solid red; */
+            font-family: 'Bree Serif', serif;
+        }
+        /* section::before{
+            content: "this is a content";
+        } */
+        h1{
+            font-size: 4em;
+        }
+        p{
+            text-align: center;
+        }
+        header::before{
+            background: url('https://source.unsplash.com/collection/190727/1600x900') no-repeat center center/cover;
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+                <li class="item">Contact Us</li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h1>Welcome to Coding World</h1>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum ipsa aspernatur facere dignissimos delectus dolorem ratione, aliquid cumque! Nemo neque beatae, quidem adipisci ratione accusamus aspernatur tempora explicabo? Facilis, ullam?
+    </section>
+</body>
+</html>

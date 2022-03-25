@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow and Text Shadow</title>
+    <style>
+        /* body{
+
+        } */
+        .container {
+            display: flex;
+        }
+
+        .card {
+            background-color: aqua;
+            padding: 23px 12px;
+            /* border: 2px solid red; */
+            
+            /* box-shadow: offset-x offset-y color; */
+            /* box-shadow: 5px 5px; */
+            /* box-shadow: -5px 5px yellow; */
+
+            /* box-shadow: offset-x offset-y blur-radius color; */
+            /* box-shadow: -5px 5px 100px yellow; */
+
+            /* box-shadow: offset-x offset-y blur-radius spread-radius color; */
+            /* box-shadow: -5px 5px 10px 10px yellow; */
+            box-shadow: inset 50px 5px 10px 10px yellow;
+        }
+
+        .card h1 {
+            text-shadow: 3px 4px rgb(27, 100, 184);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+            <h1>card-1</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt quod nostrum rem alias aspernatur ipsa
+                sequi ut asperiores quaerat quis enim, magni minima, vel, laboriosam aperiam libero? Sequi, laboriosam
+                assumenda.
+            </p>
+        </div>
+        <div class="card" id="card-2">
+            <h1>card-2</h1>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus sint delectus animi sunt
+                pariatur nulla corrupti cum eligendi. Eum ut rem quisquam dolores neque sunt expedita magnam numquam
+                enim in?
+            </p>
+        </div>
+        <div class="card" id="card-3">
+            <h1>card-3</h1>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut officia aliquid placeat nobis numquam id,
+                natus possimus libero voluptatum, tenetur saepe, et dolorem! Inventore laborum pariatur doloremque nihil
+                assumenda distinctio.
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

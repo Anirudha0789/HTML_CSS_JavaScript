@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform Property</title>
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            font-family: 'Bree Serif', serif;
+        }
+
+        .container {
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .box {
+            background-color: #0aa0a0;
+            display: flex;
+            height: 200px;
+            width: 200px;
+
+            /* vertically center*/
+            align-items: center;
+
+            /* Horizonatal center */
+            justify-content: center;
+            border-radius: 15px;
+            transition: all 2s ease-in-out;
+        }
+
+        .box:hover {
+            background-color: yellow;
+            /* transform: rotate(90deg); */
+            /* transform: skew(60deg); */
+            /* transform: scale(2); */
+            /* transform: translateX(120px); */
+            /* transform: translateY(120px); */
+            transform: translate(120px, 120px);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Transform</h1>
+    <div class="container">
+        <div class="box">
+            Box
+        </div>
+    </div>
+</body>
+
+</html>

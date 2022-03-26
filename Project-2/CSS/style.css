@@ -1,0 +1,282 @@
+/* CSS Reset */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Bree Serif', serif;
+}
+
+body{
+    background-color: #FFFFCC;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* CSS variables */
+:root{
+    --navbar-height:59px
+}
+
+/**************** Nav bar *********************/
+
+#navbar{
+    display: flex;
+    align-items: center;
+    /* background-color: black; */
+    position: sticky;
+    top: 0;
+}
+
+/* navbar: image */
+#logo{
+    margin: 8px 9px;
+    padding: 4px 10px;
+}
+
+#logo img{
+    /* margin: 0px 2px; */
+    height: 50px;
+    width: 50px;
+}
+
+/* navbar : list */
+
+#navbar ul{
+    display: flex;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    display: block;
+    margin: 18px 5px;
+    padding: 5px 11px;
+    border-radius: 15px;
+    text-decoration: none;
+    color: #FFFFCC;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: #FFFFCC;
+}
+
+/**************** Home Section **************/
+
+#home{
+    display: flex;
+    flex-direction: column;
+    height: 367px;
+    margin: 2px 2px;
+    padding: 2px 2px;
+    /* border: 2px solid yellow; */
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#home::before{
+    content: "";
+    /* background: url('../Image/background.jpg') no-repeat center center/cover;            */
+    background: url('https://source.unsplash.com/collection/190727/1600x900') no-repeat center center/cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 457px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+#home h1{
+    color: #FFFFCC;
+    text-align: center;
+}
+
+#home p{
+    text-align: center;
+    font-size: 2.2rem;
+    text-justify: center;
+}
+
+/* Utility Classes */
+
+.h-primary{
+    font-size: 3.8rem;
+    padding: 12px;
+}
+
+.h-secondary{
+    font-size: 2.8rem;
+    padding: 12px;
+}
+
+.center{
+    text-align: center;
+}
+
+.btn{
+    margin: 20px 20px;
+    padding: 6px 17px;
+    border: 2px solid yellow;
+    background-color: #f5f598;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: #FFFFCC;
+    color: black;
+}
+
+/* Services Section */
+
+#services{
+    margin: 100px;
+    display: flex;
+    /* position: relative; */
+}
+
+#services .box{
+    /* display: flex; */
+    border: 2.5px solid yellow;
+    border-radius: 10px;
+    margin: -70px 12px;
+    padding: 22px 23px;
+    background-color: #FFFFCC;
+}
+
+#services .box img{
+    height: 150px;
+    width: 150px;
+    display: block;
+    margin: auto;
+}
+
+#services .box .image{
+    height: 150px;
+    width: 150px;
+    /* display: block;
+    margin: auto; */
+}
+
+/* #services .box p{
+    
+} */
+
+/* Client Section */
+
+#client{
+    margin: 2px;
+    /* border: 2.5px solid yellow; */
+    border-radius: 10px;
+}
+
+#client::before{
+    content: "";
+    position: absolute;
+    /* background: url('../Image/clients.png') no-repeat center center/cover; */
+    height: 75%;
+    width: 100%;
+    z-index: -1;
+    /* opacity: 0.4; */
+    margin: -50px 0px;
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2.5px solid yellow; */
+    border-radius: 10px;
+    background-color: #FFFFCC;
+}
+
+#clients img{
+    height: 90px;
+    width: 150px;
+}
+
+.client-items{
+    /* margin: 2px 20px; */
+    padding: 2px 20px;
+}
+
+/* Contact Section */
+
+#contact{
+    position: relative;
+    /* border: 2.5px solid yellow; */
+    border-radius: 10px;
+    /* margin: 34px; */
+}
+
+#contact::before{
+    content: "";
+    /* background: url('../Image/contactus.png') no-repeat center center/cover; */
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#contact-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 34px;
+}
+
+.form-group{
+    display: flex;
+    margin: 2px 2px;
+    padding: 2px 2px;
+    /* justify-content: center; */
+}
+
+input{
+    width: 100%;
+    margin: 10px;
+    padding: 0.5rem;
+    border: 2.5px solid yellow;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+textarea{
+    width: 100%;
+    margin: 10px;
+    padding: 0.5rem;
+    border: 2.5px solid yellow;
+    border-radius: 10px;
+}
+
+label{
+    width: 35%;
+    font-size: 1.2rem;
+    margin: 0px;
+    padding: 18px;
+}
+
+footer{
+    background: black;
+    color: white;
+}

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries with CSS Grid</title>
+    <style>
+        .container {
+            display: grid;
+            gap: 1rem;
+            grid-template-areas:
+                'navbar navbar navbar navbar'
+                'section section section aside'
+                'footer footer footer footer';
+        }
+
+        .border-now {
+            border: 2px solid red;
+            padding: 10px 23px;
+            background-color: wheat;
+        }
+
+        nav {
+            grid-area: navbar;
+        }
+
+        section {
+            grid-area: section;
+        }
+
+        aside {
+            grid-area: footer;
+            text-align: center;
+        }
+
+        @media only screen and (max-width:300px) {
+            body {
+                background-color: red;
+            }
+
+            .container {
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'section section section aside'
+                    'aside aside aside aside'
+                    'footer footer footer footer';
+            }
+
+            aside {
+                display: none;
+            }
+
+            span {
+                display: block;
+                text-align: center;
+            }
+        }
+
+        @media only screen and (min-width: 300px) and (max-width:500px) {
+            body {
+                background-color: blue;
+            }
+
+            .container {
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'section section section section'
+                    'aside aside aside aside'
+                    'footer footer footer footer ';
+            }
+
+            aside {
+                display: none;
+            }
+
+            span {
+                display: block;
+                text-align: center;
+            }
+        }
+
+        @media (min-width: 500px) and (max-width:800px) {
+            body {
+                background-color: yellow;
+            }
+
+            .container {
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'section section section section'
+                    'aside aside aside aside'
+                    'footer footer footer footer ';
+            }
+
+            span {
+                display: block;
+                text-align: center;
+            }
+        }
+
+        @media (min-width: 800px) {
+            body {
+                background-color: green;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="border-now">
+            <span>Home</span>
+            <span>About</span>
+            <span>Services</span>
+            <span>Contact</span>
+        </nav>
+        <section class="border-now">
+            <h1>CSS</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus, nisi! Corporis, consequatur
+                maiores omnis tenetur minima, ratione expedita blanditiis cumque possimus nihil eligendi aut nisi
+                aperiam? Vero reiciendis vel impedit.</p>
+        </section>
+        <aside class="border-now">
+            <h1>More About us</h1>
+        </aside>
+    </div>
+    <footer class="border-now">Copyright</footer>
+</body>
+
+</html>

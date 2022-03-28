@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoFit and MinMax</title>
+    <style>
+        .container {
+            display: grid;
+            gap: 1rem;
+            /* grid-template-columns: 112px 112px 112px; */
+            /* grid-template-columns: 1fr 1fr 1fr; */
+            /* grid-template-rows: 1fr 1fr 1fr; */
+            /* justify-content: center; */
+            /* align-items: center; */
+
+            /* Resposive */
+            grid-template-columns: repeat(auto-fit, MinMax(400px, 1fr));
+        }
+
+        .box {
+            border: 2px solid black;
+            background-color: aqua;
+            padding: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">Box-1</div>
+        <div class="box">Box-2</div>
+        <div class="box">Box-3</div>
+        <div class="box">Box-4</div>
+        <div class="box">Box-5</div>
+        <div class="box">Box-6</div>
+        <div class="box">Box-7</div>
+        <div class="box">Box-8</div>
+        <div class="box">Box-9</div>
+        <div class="box">Box-10</div>
+        <div class="box">Box-11</div>
+        <div class="box">Box-12</div>
+    </div>
+</body>
+
+</html>

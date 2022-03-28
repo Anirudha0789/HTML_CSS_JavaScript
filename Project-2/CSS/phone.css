@@ -11,9 +11,9 @@
 
 #navbar ul li a{
     font-size: 1.2rem;
-    padding: 0px 2px;
+    /* padding: 0px 2px; */
     padding-bottom: 8px;
-    margin: 0px 3px;
+    margin: 4px 3px;
 }
 
 #logo {
@@ -88,7 +88,14 @@ label{
 
 .h-primary{
     font-size: 2.6rem;
+    transition: all 0.8s ease-in-out 0.2s;
 }
+
+.h-primary:hover{
+    font-size: 3.8rem;
+    padding: 12px;
+}
+
 
 .h-secondary{
     font-size: 1.2rem;

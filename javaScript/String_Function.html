@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Function</title>
+    <script>
+        var string = "Anirudha"
+        console.log(string)
+        // fisrt occurance of substring
+        var pos = string.indexOf('i')
+        console.log(pos)
+        pos = string.lastIndexOf('u')
+        console.log(pos)
+
+        // Substring from string
+
+        var substr = string.substring(0,6)       // [0, 6)
+        console.log(substr)
+
+        var replaced = string.replace('Anirudha', 'Rajodiya' )
+        console.log(replaced)
+
+        var up = string.toUpperCase()
+        console.log(up)
+        var lo = string.toLowerCase()
+        console.log(lo)
+
+        var newstring = string.concat(' Rajodiya')
+        console.log(newstring)
+
+        var whitespces = "       conatines          whitespaces         "
+        console.log(whitespces)
+        console.log(whitespces.trim())
+
+        var char_ = string.charAt(6)
+        console.log(char_)
+
+        console.log(string[2])
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Sting Function</h1>
+    </div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigating the DOM</title>
+</head>
+
+<body>
+    <div>
+        <h1>Document Objective Module</h1>
+    </div>
+    <div id="main" class="container">
+        <ul id="nav">
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Contact Us</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        Container
+    </div>
+
+    <script>
+        let main = document.getElementById('main');
+        console.log(main);
+        let nav = document.getElementById('nav');
+        console.log(nav);
+
+        let containers = document.getElementsByClassName('container');
+        console.log(containers);
+
+        let sel = document.querySelector('.container');
+        console.log("Selector returns", sel);
+
+        let sel1 = document.querySelector('#nav');
+        console.log("Selector returns", sel1);
+
+        let sel2 = document.querySelector('#nav>li');
+        console.log("Selector returns", sel2);
+
+        let sel3 = document.querySelectorAll('#nav');
+        console.log("Selector returns", sel3);
+    </script>
+</body>
+
+</html>

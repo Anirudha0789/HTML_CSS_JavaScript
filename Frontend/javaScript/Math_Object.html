@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Object</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Math Object</h1>
+    </div>
+</body>
+<script>
+    let m = Math;
+    console.log(m);
+    console.log(Math.E);
+    console.log(Math.log10);
+    console.log(Math.LN10);
+    console.log(Math.LN2);
+    console.log(Math.SQRT1_2);
+    console.log(Math.SQRT2);
+
+    // Functions
+
+    let a = 34.446325564563;
+    let b = 65.95635456456;
+
+    console.log(a, b);
+    console.log(Math.round(a), Math.round(b));
+    console.log(Math.pow(a, b));
+    console.log(Math.pow(2, 3));
+
+    // ceil
+    console.log(Math.ceil(5.113232));
+    // floor
+    console.log(Math.floor(5.232323));
+
+    // abs function
+
+    console.log(Math.abs(-5.5564));
+
+    // trignometric function
+    console.log(Math.sin(30));    // rad
+
+    // min and max function
+
+    console.log(Math.min(45, 4, 4, 433, 2));
+    console.log(Math.max(45, 4, 4, 433, 2));
+
+    // random
+
+    console.log(Math.random());
+
+    // random number b/w a nd b
+    let a1 = 1;
+    let b1 = 100;
+    let r = a1 + (b1 - a1) * Math.random();
+    console.log(r);
+
+
+</script>
+
+</html>

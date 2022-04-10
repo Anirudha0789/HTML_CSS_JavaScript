@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Working with JSON</title>
+    <script>
+        let jsonobj = {
+            name: "Anirudha",
+            age: 21
+        }
+        console.log(jsonobj);
+
+        // object to string
+        let myjson = JSON.stringify(jsonobj);
+        console.log(myjson);
+
+        myjson = myjson.replace("Anirudha", "Ani");
+        console.log(myjson);
+
+        // String to object
+        let newjsonobj = JSON.parse(myjson);
+        console.log(newjsonobj);
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Working with JSON</h2>
+    </div>
+</body>
+
+</html>

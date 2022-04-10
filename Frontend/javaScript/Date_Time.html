@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date And Time</title>
+</head>
+
+<body>
+    <div>
+        <span id="time"></span>
+    </div>
+    <script>
+        let now = new Date();
+        console.log(now);
+
+        // let newdate = new Date("2089-09-30");
+        // let newdate = new Date(year, month, date, hours, minutes, seconds, milliseconds);
+        let newdate = new Date(3020, 0, 6, 9, 3, 2, 34);
+        console.log(newdate);
+
+        let yr = newdate.getFullYear();
+        console.log(yr);
+
+        let month = newdate.getMonth();
+        console.log(month);
+
+        let date = newdate.getDate();
+        console.log(date);
+
+        let hrs = newdate.getHours();
+        console.log(hrs);
+
+        let mins = newdate.getMinutes();
+        console.log(mins);
+
+        let secs = newdate.getSeconds();
+        console.log(secs);
+
+        let millisecs = newdate.getMilliseconds();
+        console.log(millisecs);
+
+        let day = newdate.getDay();
+        console.log(day);
+
+        newdate.setDate(5);
+        console.log(newdate);
+
+        setInterval(update_time, 1000);
+
+        function update_time() {
+            time.innerHTML = new Date();
+        }
+    </script>
+</body>
+
+</html>

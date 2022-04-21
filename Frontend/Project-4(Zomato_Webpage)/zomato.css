@@ -145,3 +145,117 @@ header::before{
     text-decoration: none;
     color: black;
 }
+
+/* Collection Section */
+
+.collecion_header{
+    border: 0.1rem solid red;
+    margin: 7px 74px;
+    padding: 6px 105px;
+}
+
+.collecion_header h1{
+    font-size: 2rem;
+    margin: 2px 2px;
+    padding: 2px 2px;
+}
+
+.explore_All_coll{
+    display: flex;
+    justify-content: space-between;
+}
+
+.explore_ p{
+    margin: 2px 2px;
+    padding: 2px 2px;
+}
+
+.All{
+    display: flex;
+}
+
+.All a{
+    justify-content: flex-end;
+    text-decoration: none;
+    color: red;
+}
+
+.collection_boxes{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px 15px;
+    grid-template-columns: repeat(auto-fit, MinMax(337px, 1fr));
+    border: 0.1rem solid red;
+    height: 20rem;
+}
+
+.coll_box{
+        display: flex;
+        flex-wrap: wrap;
+        border: 0.1rem solid red;
+        /* grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(auto-fit, MinMax(100px, 1fr)); */
+        position: relative;
+        gap: 10px 40px;
+        margin: 20px 75px;
+        padding: 34px 105px;
+}
+
+.coll_box h2{
+    border: 0.1rem solid red;
+    margin: 2px;
+    padding: 2px;
+    color: white;
+}
+
+.coll_box-1::before{
+    content: "";
+    background: url('box1.webp') no-repeat center center/cover;
+    position: absolute;
+    left: 0;
+    width: 362px;
+    height: 300px;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+.coll_box-2::before{
+    content: "";
+    background: url('box2.webp') no-repeat center center/cover;
+    position: absolute;
+    /* left: 0; */
+    width: 362px;
+    height: 300px;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+.coll_box-3::before{
+    content: "";
+    background: url('box3.webp') no-repeat center center/cover;
+    position: absolute;
+    /* left: 0; */
+    width: 362px;
+    height: 300px;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+.coll_box-4::before{
+    content: "";
+    background: url('box4.webp') no-repeat center center/cover;
+    position: absolute;
+    /* left: 0; */
+    width: 362px;
+    height: 300px;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+.coll_box img{
+    border: 0.1rem solid red;
+    margin: 2px;
+    padding: 2px;
+    height: 12rem;
+    width: 16rem;
+}

@@ -1,0 +1,16 @@
+console.log("This is module JS");
+
+function average(arr){
+    let sum = 0;
+    arr.forEach(element => {
+       sum += element; 
+    });
+    return sum/arr.length;
+}
+
+// module.exports = {
+//     avg: average,
+//     name : 'Ani',
+// }
+
+module.exports.name = "Anirudha";

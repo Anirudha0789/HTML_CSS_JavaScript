@@ -1,0 +1,41 @@
+extends base.pug
+
+block scripts  
+    script(src="/static/index.js") 
+
+block style 
+    style
+      include ../static/style.css
+
+block content 
+    section#introSection 
+        | Welcome to #[span Dance Academy]
+    section#missionsection 
+        h2 Our Mission
+        div.card
+            h3 Dance Perfection
+            div.card-box
+                div.card-img
+                    img(src="../static/1.png", alt="")
+                div.card-content
+                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, illo.
+        div.card
+            h3 Dance The Way You Like
+            div.card-box
+                div.card-img
+                    img(src="../static/1.png", alt="")
+                div.card-content
+                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, illo.
+        div.card
+            h3 Expert Teaching
+            div.card-box
+                div.card-img
+                    img(src="../static/1.png", alt="")
+                div.card-content
+                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, illo.
+    section#sponsorsection 
+        h2 Our Sponsors
+        div#sponsor
+            img(src="../static/spon1.png", alt="Sponsor Image", class="spon_img")
+            img(src="../static/spon2.png", alt="Sponsor Image", class="spon_img")
+            img(src="../static/spon3.png", alt="Sponsor Image", class="spon_img")

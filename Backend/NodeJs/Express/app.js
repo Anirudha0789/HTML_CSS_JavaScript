@@ -23,8 +23,8 @@ app.get("/", (req, res)=>{
     const params = {"title" : "PUG", "content": con};
     res.status(200).render("index.pug", params);
 });
+
 app.post("/", (req, res)=>{
-    // alert("Submit Successfully!!");
     name = req.body.name;
     age = req.body.age;
     gender = req.body.gender;

@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+#logo{
+    display: flex;
+}
+
+#logo img{
+    height: 40px;
+    width: 47px;
+}
+
+#navbar{
+    display: flex;
+    background-color: aquamarine;
+    padding: 5px 14px;
+}
+
+#navbar ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 2px 2px;
+    padding: 2px 2px;
+    align-items: center;
+}
+
+#navbar li{
+    list-style: none;
+    /* padding-top: 33px; */
+}
+
+#navbar li a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: black;
+    padding: 2px 15px;
+    transition: 0.3s ease-out;
+    opacity: 0.6;
+}
+
+#navbar li a:hover{
+    font-size: 1.25rem;
+    color: black;
+    opacity: 1;
+}
+
+#introSection{
+    height: 764px;
+    background: center/cover no-repeat url("/static/bg1.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    color: rgb(175, 255, 228);
+    padding-bottom: 10px;
+}
+
+#introSection span{
+    font-weight: bold;
+    padding: 0px 6px;
+}
+
+#missionsection{
+    height: 300px;
+    background-color: rgb(175, 255, 228);
+    text-align: center;
+    padding-top: 20px;
+} 
+
+.card{
+    border: 2px solid black;
+    border-radius: 10px;
+    text-align: center;
+    width: 24%;
+    margin: 23px 15px;
+    height: 200px;
+    display: inline-block;
+}
+
+.card h3{
+    padding: 7px 30px;
+}
+
+.card-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-img{
+    height: 100px;
+    width: 100px;
+}
+
+.card-img img{
+    height: inherit;
+    width: 100px;
+}
+
+.card-content p{
+    padding: 6px 16px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+#sponsorsection{
+    height: 300px;
+    background-color: rgb(175, 255, 228);
+    text-align: center;
+    padding-top: 20px;
+}
+
+#sponsor{
+    display: flex;
+    /* height: 120px;
+    max-width: 1000px; */
+    margin: 22px 35px;
+    padding: 35px 222px;
+    justify-content: center;
+    align-items: center;
+}
+
+#sponsor img{
+    margin: 2px 22px;
+}
+
+.spon_img{
+    height: 106px;
+    width: 234px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background-color: rgb(65, 241, 183);
+    text-align: center;
+    font-weight: bolder;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width==device-width, initial-sacle=1.0">
+    <title>Chat</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <div>
+                <img class="logo" src="icon.png" alt="">
+            </div>
+            <div>
+                <h1 class="heading">| chat Now</h1>
+            </div>
+        </div>
+    </nav>
+
+    <section>
+        <div class="container">
+            <!-- <div class="message left">message left</div>
+            <div class="message right">message right</div> -->
+        </div>
+    </section>
+
+    <div class="send">
+        <form action="text" id="send-container">
+            <input type="text" name="messageINput" id="messageInput" placeholder="Message">
+            <button class="btn" type="submit">Send</button>
+        </form>
+    </div>
+</body>
+</html>
+
+
+<script src="http://localhost:8000/socket.io/socket.io.js"></script>
+<script src="js/client.js"></script>

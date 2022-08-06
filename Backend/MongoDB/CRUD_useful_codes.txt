@@ -1,0 +1,48 @@
+CRUD Operation -> Create Read Update Delete
+
+
+// Inserting database in MongoDB
+
+
+show dbs
+show collections
+use useful_codes_tut
+
+
+db.items.insertOne({name:"Samsung 30s", price: 20000, rating: 5.0, qty1:100, sold: 9})
+
+db.items.insertOne({name:"Samsung 30s", price: 20000, rating: 5.0, qty1:100, sold: 9}, {name:"TOto 30s", price: 20000, rating: 2.0, qty1:100, sold: 1, isbig: true})
+
+db.items.insertMany([{name:"Samsung 30s", price: 20000, rating: 5.0, qty1:100, sold: 9}, {name:"TOto 30s", price: 20000, rating: 2.0, qty1:100, sold: 1, isbig: true}])
+
+// ********************************* Finding in Database
+db.items.find()
+db.items.find({rating:5.0})
+
+db.items.find({rating: {$gte: 3.5}})   // greater than  equal 3.5
+db.items.find({rating: {$gt: 3.5}})   // greater than 3.5
+
+db.items.find({rating: {$gt: 3.5}, price:{gt:10000}})   // and
+
+db.items.find({rating: {$lt: 3.5})
+
+db.items.find({ $or:[{rating: {$gt: 3.5}}, {price:{gt:10000}}]})
+
+db.items.find({rating: {$gt: 3.5}}, {rating:1})
+db.items.find({rating: {$gt: 3.5}}, {qty:1})
+
+
+// ********************************* Deleting from Database
+
+db.items.deleteOne({rating:5.0})
+db.items.deleteOne({price:20000})
+
+db.items.deleteMany({price:20000})
+
+// ******************************** Updating Database
+
+db.anothercollection.insertOne({a:64})
+
+db.items.updateOne({name: "Samsung 30s"}, {$set: {price:64654163541354313}})
+
+db.items.updateMany({name: "Samsung 30s"}, {$set: {price:64654163541354313, rating: 100000000000}})

@@ -3,7 +3,7 @@ const { fstat } = require("fs");
 const path = require("path");
 const app = express();
 const port = 80;
-const fs = require("fs")
+const fs = require("fs");
 
 // EXPRESS SPECIFIC STUFF
 // for serving static file
